@@ -177,7 +177,7 @@ input[type=number] {
          
     /* MODE SWITCH */
     #toggle {
-        color: black;
+        color: red;
         background-color: rgb(215, 215, 215);
     }
 
@@ -186,6 +186,7 @@ input[type=number] {
     #container {
         margin: 0 0.625em 0.625em 0.625em;
        /* height: 92vh; */
+        height: 100%;
         box-shadow: none;
     }
     
