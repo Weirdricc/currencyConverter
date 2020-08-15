@@ -178,16 +178,13 @@ input[type=number] {
     /* MODE SWITCH */
     #toggle {
         color: black;
-     /*   background-color: rgb(215, 215, 215); */
-        background-color: red;
+        background-color: cyan;
     }
 
 
     /* CONTAINER */
     #container {
         margin: 0 0.625em 0.625em 0.625em;
-       /* height: 92vh; */
-        height: 100%;
         box-shadow: none;
     }
     
