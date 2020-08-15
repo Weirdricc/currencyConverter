@@ -179,6 +179,7 @@ input[type=number] {
     #toggle {
         color: rgb(215, 215, 215);
         background-color: black;
+        background-color: blue;
     }
 
 
