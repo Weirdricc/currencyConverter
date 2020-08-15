@@ -185,7 +185,7 @@ input[type=number] {
     /* CONTAINER */
     #container {
         margin: 0 0.625em 0.625em 0.625em;
-        height: 92vh;
+       /* height: 92vh; */
         box-shadow: none;
     }
     
