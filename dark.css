@@ -30,6 +30,11 @@ nav {
     border: none;
 }
 
+#toggle:hover {
+    background-color: cyan;
+    color: black;
+}
+
 /* MAIN */
 
 /* remove the nuber input arrows */
