@@ -6,23 +6,29 @@ body {
 }
 
 body {
-  background-color: #bbbbbb;
+  background-color: #000000;
   font-family: 'Open Sans Condensed', sans-serif;
+  /* font-family: 'Wire One', sans-serif; */
   font-size: 25px;
   text-align: center;
 }
 
+p {
+  margin: 0;
+}
+
 /* MODE SWITCH */
-nav {
+.switch-wrap {
   display: flex;
+  justify-content: flex-end;
 }
 
 #toggle {
-  color: white;
-  background-color: black;
-  border-radius: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 3px;
   padding: 5px;
-  margin: 0 20px 1px auto;
+  margin: 10px;
   border: none;
 }
 
@@ -32,13 +38,13 @@ nav {
 }
 
 #toggle:hover {
-  background-color: cyan;
-  color: black;
+  background-color: #00ffff;
+  color: #000000;
 }
 
 /* MAIN */
 
-/* remove the nuber input arrows */
+/* removes the number input arrows */
 /* for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -51,64 +57,82 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+/* WRAPPER */
+#page-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 /* CONTAINER */
 #container {
-  background-color: black;
-  color: white;
-  box-shadow: 0 10px 20px rgba(50, 50, 50, 1), 0 6px 6px rgba(100, 100, 100, 1);
-  border-radius: 5px;
-  margin: 0 20px 20px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 620px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* TOP AND INPUTS */
-#topmost p {
-  margin-top: -20px;
-  font-size: 15px;
+#topmost {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.currencies {
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #top1,
 #top2 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 #sel1,
 #sel2 {
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   outline: none;
   border: none;
-  border-top: 1px solid rgb(120, 120, 120);
+  border-top: 1px solid #787878;
 }
 
 #sel1:hover,
 #sel2:hover,
 #sel1:focus,
 #sel2:focus {
-  border-top: 1px solid cyan;
-}
-
-#sel2 {
-  margin-left: 10px;
+  border-top: 1px solid #00ffff;
 }
 
 #in1,
 #in2 {
-  background-color: black;
-  color: white;
-  height: 120px;
-  width: 250px;
+  background-color: #000000;
+  color: #ffffff;
+
+  /* test on another computer */
+  /* height: 120px;
+  width: 250px; */
+  /* min-height: 120px;
+  min-width: 250px; */
+
+  max-height: 144px;
+  max-width: 300px;
   font-size: 90px;
   font-family: 'Wire One', sans-serif;
   text-align: center;
@@ -120,7 +144,7 @@ input[type='number'] {
 #in2:hover,
 #in1:focus,
 #in2:focus {
-  color: cyan;
+  color: #00ffff;
 }
 
 #rate {
@@ -129,22 +153,30 @@ input[type='number'] {
 
 #rate-desc {
   font-size: 12px;
-  margin-bottom: -30px;
-  color: rgb(107, 107, 107);
+  margin-bottom: -20px;
+  color: #6b6b6b;
 }
 
 /* MIDDLE */
-#middle {
-  height: 10vh;
-  width: 100%;
+.space {
+  height: 20px;
+  width: 20px;
 }
 
 /* BOTTOM */
 #bottom {
   display: flex;
+  justify-content: center;
   justify-content: space-between;
-  width: 500px;
-  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.new-input-wrap {
+  display: flex;
+  justify-content: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
 }
 
 #new-cur,
@@ -152,50 +184,48 @@ input[type='number'] {
 #add-btn {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 17px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   outline: none;
   border: none;
-  border-bottom: 1px solid rgb(120, 120, 120);
-}
-
-#new-cur,
-#new-rate {
-  width: 44%;
+  border-bottom: 1px solid #787878;
 }
 
 #new-cur:focus,
 #new-rate:focus,
 #new-cur:hover,
 #new-rate:hover {
-  border-bottom: 1px solid cyan;
+  border-bottom: 1px solid #00ffff;
 }
 
 #add-btn {
-  border: 1px solid rgb(155, 155, 155);
+  border: 1px solid #9b9b9b;
   border-radius: 3px;
 }
 
 #add-btn:hover {
-  background-color: cyan;
-  color: black;
+  background-color: #00ffff;
+  color: #000000;
 }
 
 /* MEDIA QUERIES */
 
-/* -------------- iPhone 6, 6S, 7 and 8 -------------- */
+@media (max-width: 768px) {
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body {
     font-size: 1.5625em;
-    background-color: black;
+    background-color: #000000;
   }
 
   /* MODE SWITCH */
   #toggle {
-    color: black;
-    background-color: cyan;
+    color: #000000;
+    background-color: #00ffff;
   }
 
   /* CONTAINER */
