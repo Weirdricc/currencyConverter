@@ -259,6 +259,14 @@ input[type='number'] {
     text-align: center;
   }
 
+  #rate-desc {
+    margin-top: 0px;
+  }
+
+  #rate-value {
+    margin-top: -10px;
+  }
+
   #rate-value {
     font-size: 20px;
   }
