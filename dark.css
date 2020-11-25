@@ -211,73 +211,82 @@ input[type='number'] {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  body {
-    font-size: 1.5625em;
-    background-color: #000000;
+  h1 {
+    padding-bottom: 20px;
   }
 
-  /* MODE SWITCH */
   #toggle {
     color: #000000;
     background-color: #00ffff;
   }
 
+  /* ------ MAIN ------ */
+  /* WRAPPER */
+  #page-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
   /* CONTAINER */
   #container {
-    margin: 0 0.625em 0.625em 0.625em;
-    box-shadow: none;
+    margin: 0 10px;
+    width: auto;
+    height: auto;
   }
 
-  /* TOP AND INPUTS */
-  #topmost p {
-    margin-top: -1.25em;
-    font-size: 0.625em;
-  }
-
-  #sel2 {
-    margin-left: 0.3125em;
+  .currencies {
+    justify-content: space-around;
   }
 
   #in1,
   #in2 {
-    height: 1em;
-    width: 2.6em;
-    font-size: 2.5em;
+    height: auto;
+    width: 100%;
+    font-size: 80px;
+    border: 1px solid #787878;
+    border-top: none;
   }
 
-  #rate-desc {
-    font-size: 0.625em;
-    margin-bottom: -1.875em;
+  #in1:hover,
+  #in2:hover,
+  #in1:focus,
+  #in2:focus {
+    border: 1px solid #00ffff;
+    border-top: none;
   }
 
   #rate {
-    font-size: 0.9375em;
+    text-align: center;
   }
 
-  /* MIDDLE */
-  #middle {
-    height: 5vh;
+  #rate-value {
+    font-size: 20px;
   }
 
   /* BOTTOM */
   #bottom {
-    width: 99%;
+    flex-direction: column;
+  }
+
+  .new-input-wrap {
+    width: 60%;
+    flex-direction: column;
   }
 
   #new-cur,
   #new-rate,
   #add-btn {
-    font-size: 0.6875em;
+    border: 1px solid #787878;
   }
 
-  #new-cur,
-  #new-rate {
-    width: 7.6em;
+  #new-cur:focus,
+  #new-rate:focus,
+  #new-cur:hover,
+  #new-rate:hover {
+    border: 1px solid #00ffff;
+  }
+
+  #add-btn {
+    margin-top: 20px;
   }
 }
