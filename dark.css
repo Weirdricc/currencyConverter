@@ -126,13 +126,13 @@ input[type='number'] {
   color: #ffffff;
 
   /* test on another computer */
-  /* height: 120px;
-  width: 250px; */
+  width: 250px;
+  height: 120px;
   /* min-height: 120px;
   min-width: 250px; */
 
-  max-height: 144px;
-  max-width: 300px;
+  /* max-height: 144px;
+  max-width: 300px; */
   font-size: 90px;
   font-family: 'Wire One', sans-serif;
   text-align: center;
@@ -211,8 +211,45 @@ input[type='number'] {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+  /*!----------------- delete */
+
+  /* #page-wrap {
+    border: 5px solid yellow;
+  }
+  #container {
+    border: 5px solid white;
+  }
+  #topmost,
+  #top,
+  .space,
+  #bottom {
+    border: 5px solid blue;
+  }
+  #topmost span,
+  .currencies,
+  #rate,
+  .new-input-wrap,
+  #add-btn {
+    border: 5px solid red;
+  }
+  #top1,
+  #top2,
+  #rate-desc,
+  #rate-value,
+  #new-cur,
+  #new-rate {
+    border: 5px solid chartreuse;
+  } */
+
+  /*!----------------- delete */
+
   h1 {
     padding-bottom: 20px;
+  }
+
+  #topmost h1 {
+    display: flex;
+    flex-direction: column;
   }
 
   #toggle {
@@ -222,26 +259,39 @@ input[type='number'] {
 
   /* ------ MAIN ------ */
   /* WRAPPER */
-  #page-wrap {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* CONTAINER */
   #container {
-    margin: 0 10px;
-    width: auto;
-    height: auto;
+    margin: 0 5%;
   }
+  /* CONTAINER */
 
   .currencies {
-    justify-content: space-around;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: stretch; */
+  }
+
+  #top1,
+  #top2 {
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: stretch; */
+    /* align-items: stretch; */
+
+    /* align-items: stretch; */
+  }
+
+  #top2 {
+    margin-top: 10px;
   }
 
   #in1,
   #in2 {
-    height: auto;
     width: 100%;
+    height: auto;
+    /* width: 99%; */
+    /* max-height: auto;
+    max-width: 100%; */
     font-size: 80px;
     border: 1px solid #787878;
     border-top: none;
@@ -273,17 +323,27 @@ input[type='number'] {
 
   /* BOTTOM */
   #bottom {
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column; */
   }
 
   .new-input-wrap {
-    width: 60%;
+    /* display: block; */
+    /* width: 97%; */
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  #new-cur,
+  #new-rate {
+    /* width: 97%; */
+    /* width: max-content; */
   }
 
   #new-cur,
   #new-rate,
   #add-btn {
+    /*todo add later */
     border: 1px solid #787878;
   }
 
@@ -296,5 +356,8 @@ input[type='number'] {
 
   #add-btn {
     margin-top: 20px;
+    padding: 7px 14px;
+    /* max-width: 460px;
+    height: auto; */
   }
 }
