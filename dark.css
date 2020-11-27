@@ -152,8 +152,8 @@ input[type='number'] {
 }
 
 #rate-desc {
-  font-size: 12px;
-  margin-bottom: -20px;
+  font-size: 20px;
+  margin-bottom: -30px;
   color: #6b6b6b;
 }
 
@@ -183,7 +183,7 @@ input[type='number'] {
 #new-rate,
 #add-btn {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 17px;
+  font-size: 22px;
   background-color: #000000;
   color: #ffffff;
   outline: none;
@@ -267,7 +267,7 @@ input[type='number'] {
   .currencies {
     flex-direction: column;
     /* justify-content: space-around; */
-    /* align-items: stretch; */
+    align-items: stretch;
   }
 
   #top1,
@@ -310,15 +310,12 @@ input[type='number'] {
   }
 
   #rate-desc {
+    font-size: 24px;
+  }
+
+  #rate-value {
     margin-top: 0px;
-  }
-
-  #rate-value {
-    margin-top: -10px;
-  }
-
-  #rate-value {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   /* BOTTOM */
@@ -337,6 +334,7 @@ input[type='number'] {
   #new-cur,
   #new-rate {
     /* width: 97%; */
+    height: 35px;
     /* width: max-content; */
   }
 
@@ -386,6 +384,7 @@ input[type='number'] {
 
   .currencies {
     flex-direction: column;
+    align-items: stretch;
   }
 
   #top1,
@@ -418,15 +417,12 @@ input[type='number'] {
   }
 
   #rate-desc {
+    font-size: 24px;
+  }
+
+  #rate-value {
     margin-top: 0px;
-  }
-
-  #rate-value {
-    margin-top: -10px;
-  }
-
-  #rate-value {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   /* BOTTOM */
@@ -441,6 +437,7 @@ input[type='number'] {
 
   #new-cur,
   #new-rate {
+    height: 35px;
   }
 
   #new-cur,
