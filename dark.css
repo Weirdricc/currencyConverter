@@ -361,3 +361,104 @@ input[type='number'] {
     height: auto; */
   }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  #topmost h1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #toggle {
+    color: #000000;
+    background-color: #00ffff;
+  }
+
+  /* ------ MAIN ------ */
+  /* WRAPPER */
+  #container {
+    margin: 0 5%;
+  }
+  /* CONTAINER */
+
+  .currencies {
+    flex-direction: column;
+  }
+
+  #top1,
+  #top2 {
+  }
+
+  #top2 {
+    margin-top: 10px;
+  }
+
+  #in1,
+  #in2 {
+    width: 100%;
+    height: auto;
+    font-size: 80px;
+    border: 1px solid #787878;
+    border-top: none;
+  }
+
+  #in1:hover,
+  #in2:hover,
+  #in1:focus,
+  #in2:focus {
+    border: 1px solid #00ffff;
+    border-top: none;
+  }
+
+  #rate {
+    text-align: center;
+  }
+
+  #rate-desc {
+    margin-top: 0px;
+  }
+
+  #rate-value {
+    margin-top: -10px;
+  }
+
+  #rate-value {
+    font-size: 20px;
+  }
+
+  /* BOTTOM */
+  #bottom {
+    display: block;
+  }
+
+  .new-input-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #new-cur,
+  #new-rate {
+  }
+
+  #new-cur,
+  #new-rate,
+  #add-btn {
+    /*todo add later */
+    border: 1px solid #787878;
+  }
+
+  #new-cur:focus,
+  #new-rate:focus,
+  #new-cur:hover,
+  #new-rate:hover {
+    border: 1px solid #00ffff;
+  }
+
+  #add-btn {
+    margin-top: 20px;
+    padding: 7px 14px;
+  }
+}
